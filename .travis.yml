@@ -37,7 +37,6 @@ cache:
 jobs:
   include:
     - script: COVERAGE=1 npm start test.node
-      after_success: npm start coveralls
 
     - &node
       script: npm start test.node
